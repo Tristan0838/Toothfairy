@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="Gaya.css">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+	  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+      	<title>ToothFairy</title>
+</head>
+
+<body>
+	<header>
+		<h2>ToothFairy</h2>
+		<nav class="Bar">
+			<a href="#Town">HOME</a>
+			<a href="#section-content">NEWS</a>
+			<a href="#section2">CAST</a>
+			<a href="#section3">GALLERY</a>
+		</nav>
+	</header>
+
+	<div class="Home" id="Town">
+		<div class="card-container" id>
+			<img class="tsuki" src="Bulan.png">
+		</div>
+
+		<div class="layer4">
+			<div class="layer3">
+				 <div class="layer2">
+				</div>	
+			</div>
+	 	</div>
+
+	 	<div class="layer1">
+			<div class="layer">
+				<img class="tsuki1" src="layer1.png">
+			</div>
+		</div>
+
+		<div class="Paragraf">
+    		<h1>Advancing Indonesia With The <span class="Tooth"><br>Tooth Fair</span> </h1>
+    		<p>
+        		Tooth Fairy is a website created for the community, so that people <br>can report complaints about existing facilities.<br>It's easy and fast with the tooth fairy.
+    		</p>
+    		<div class="Media-Sosial">
+	    		<a href="https://www.facebook.com/samuel.tristanw/" class="facebook"></a>
+	    		<a href="https://www.instagram.com/samueltristanw/" class="instragram"></a>
+	    	</div>
+		</div>
+
+		<div class="card-container-home" title="Samuel Tristan Wirayuda">
+    	</div>
+	 </div>
+
+	<div class="container">
+
+		<section class="two" id="section-content">
+			<div class="Card">
+				<div class="images">
+					<img class="img1" src="Sarjana1.JPG">
+					<img class="img1" src="Sarjana2.JPG">
+				</div>		
+			</div>
+			<div class="text">
+					<h1><span class="word">N</span>EWS</h1>
+					<p>Hai, saya Samuel Tristan Wirayuda, lulusan Teknik Elektronika dari universitas terkemuka di Salatiga. Saya sangat antusias memasuki dunia profesional dan siap menghadapi tantangan baru untuk terus berkembang. Saya berkomitmen untuk memanfaatkan pengetahuan dan keterampilan saya sambil tetap belajar dan beradaptasi dengan perkembangan industri.</p>
+		</section>
+
+		<section id="section-content">
+			<div class="three" id="section2">
+
+				<div class ="myImg">				
+				    <img src="KAM.png">
+				</div>
+				<button id="myBut"></button>
+
+
+				<div class ="myImage">				
+				    <img src="Asma.png">
+				</div>
+				<button id="myBut2"></button>
+
+				<div class="myImage2">
+					<img src="SME-2.png">
+				</div>
+				<button id="myBut3"></button>
+
+				<div class="study">
+					<div class="Sarjana">
+						<h3><span class="word2">S</span>ARJANA 1</h3>
+						<p>Saya meraih gelar Sarjana dalam Teknik Elektro dengan IPK 3.41 dari Universitas Kristen Satya Wacana, di mana saya menyelesaikan studi saya pada tahun 2024. Selama periode 2019 hingga 2024, saya mendapatkan pengetahuan dan keterampilan yang mendalam dalam berbagai aspek teknik elektro, mulai dari desain sirkuit hingga sistem kontrol dan telekomunikasi.</p>
+					</div>
+					<div class="sma">
+						<h3><span class="word2">S</span>MA</h3>
+						<p>
+							Saya menyelesaikan pendidikan menengah di SMAN 24 Kabupaten Tangerang dari tahun 2016 hingga 2019, di mana saya lulus dengan rata-rata nilai kelulusan 81,3. Selama masa studi di sekolah tersebut, saya memperoleh dasar akademik yang kuat dan keterampilan penting yang membentuk landasan untuk melanjutkan pendidikan ke tingkat perguruan tinggi.
+						</p>
+					</div>
+					<div class="smp">
+						<h3><span class="word2">S</span>MP</h3>
+						<p>
+							Pada saat menginjakkan kaki di Sekolah Menengah Pertama, saya bersekolah di SMP Negeri 5 Pasar Kemis dari tahun 2013 hingga 2016. Selama periode tersebut, saya mengembangkan dasar akademik yang kokoh serta keterampilan interpersonal yang penting.
+						</p>
+					</div>
+				</div>
+
+			</div>
+		</section>
+		<section class="Two" id="section-content" >
+			<div class="Memorry" id="section3">
+				
+				<button class="button" id="Button1" href="#Town">
+					<span class="word3">
+						Organization
+					</span>
+				</button>
+
+				<button class="button" id="Button2" href="">
+					<span class="word4">
+						Gallery 
+					</span>
+				</button>
+			</div>
+		</section>
+	</div>
+
+	<script src="Jquery-vers3-7-1.js"></script>
+
+	<script type="text/javascript">
+	
+		var indexValue = 0;
+		function slideShow() {
+			setTimeout(slideShow, 2500);
+			var x;
+			const img = document.querySelectorAll(".img1");
+			for ( x = 0; x < img.length ; x++) {
+				img[x].style.display = "none"; 
+			}
+			indexValue++;
+			if (indexValue > img.length) {indexValue = 1}
+				img[indexValue -1].style.display = "block";
+		}
+		slideShow();
+	</script>
+
+	<script>
+	    $(window).scroll(function() {
+	        var wScroll = $(this).scrollTop();
+
+			console.log('Scroll Top:', wScroll);
+	        $('.layer4').css({
+	            'transform' : 'translate(0px, '+ wScroll/20 +'%)'
+	        });
+
+	        $('.layer3').css({
+	            'transform' : 'translate(0px, '+ wScroll/20 +'%)'
+	        });	        
+
+	        $('.layer2').css({
+	        	'transform' : 'translate(0px, ' + wScroll/15 + '%)'
+	        });
+
+	        $('.card-container').css({
+	        	'transform' : 'translate(0px, ' + wScroll/2 + '%)'
+	        });
+
+	        $('.Paragraf').css({
+	        	'transform' : 'translate(0px, ' + wScroll/-4 +'%)'
+	        })
+
+	        $('.card-container-home').css({
+	        	'transform' : 'translate(0px, ' + wScroll/-10 +'%)'
+	        })
+
+	        if(wScroll> 300 ) {
+	            $('.Card').addClass('sea');
+	        }
+	        else {
+	    		$('.Card').removeClass('sea');
+	    	}
+
+	    	if(wScroll> 300 ) {
+	            $('.text').addClass('sea');
+	        }
+	        else {
+	    		$('.text').removeClass('sea');
+	    	}
+	    });
+
+	   	$('.container').scroll(function() {
+	    	var sScroll = $(this).scrollTop();
+	    	console.log('Scroll container : ', sScroll);
+
+	    	if(sScroll > 375) {
+	    		$('.Card').removeClass('sea');
+	    	}
+	    	else {
+	    		$('.Card').addClass('sea');
+	    	}
+
+	    	if(sScroll > 375) {
+	    		$('.text').removeClass('sea');
+	    	}
+	    	else {
+	    		$('.text').addClass('sea');
+	    	}
+
+	    	if(sScroll > 20 && sScroll < 750) {
+	    		$('.three').addClass('sea3');
+	    	}
+	    	else {
+	    		$('.three').removeClass('sea3');
+	    	}
+
+
+	    });
+	</script>
+
+	<script>
+        $('.myImg').addClass('sea1');
+         
+
+		$(document).ready(function() {
+			const myButton = $('#myBut');
+			const myButton2 = $('#myBut2');
+			const myButton3 = $('#myBut3');
+
+			myButton.on('click', function() {
+        		$('.myImg').addClass('sea1');
+        		$('.myImage').removeClass('sea1');
+       			$('.myImage2').removeClass('sea1');  
+      			
+			});
+
+			myButton2.on('click', function() {
+        		$('.myImg').removeClass('sea1');
+       			$('.myImage').addClass('sea1');
+       			$('.myImage2').removeClass('sea1'); 
+   						
+			})
+
+			myButton3.on('click', function() {
+        		$('.myImg').removeClass('sea1');
+       			$('.myImage').removeClass('sea1');
+       			$('.myImage2').addClass('sea1'); 		
+			})
+
+		})
+
+	</script>
+
+	<script>
+		 $('.Sarjana').addClass('sea2');     
+		 $(document).ready(function() {
+			const myButton = $('#myBut');
+			const myButton2 = $('#myBut2');
+			const myButton3 = $('#myBut3');
+
+			myButton.on('click', function() {
+        		$('.Sarjana').addClass('sea2');
+        		$('.sma').removeClass('sea2');
+       			$('.smp').removeClass('sea2');  
+      			
+			});
+
+			myButton2.on('click', function() {
+        		$('.Sarjana').removeClass('sea2');
+       			$('.sma').addClass('sea2');
+       			$('.smp').removeClass('sea2'); 
+   						
+			})
+
+			myButton3.on('click', function() {
+        		$('.Sarjana').removeClass('sea2');
+       			$('.sma').removeClass('sea2');
+       			$('.smp').addClass('sea2'); 		
+			})
+			window.onbeforeunload = function () {
+  				window.scrollTo(0, 0);
+			}
+
+		})   
+	</script>
+	
+</body>
+</html>
