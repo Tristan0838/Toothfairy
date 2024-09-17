@@ -1,0 +1,588 @@
+ 	
+	* {
+	    margin: 0;
+	    padding: 0;
+	    box-sizing: border-box;
+	}
+
+ 	body, html{
+		height: 100%;
+ 		margin: 0 ;
+ 		scrollbar-width: none ;
+ 	}
+
+ 	header {
+ 		position: fixed;
+		font-family: "Poppins", sans-serif;
+		font-size: 1.2vw;
+		top: 0;
+		left: 0;
+		width: 100%;
+		padding: 25px 80px;
+		display: flex;
+		color: whitesmoke;
+		justify-content: space-between;
+		background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0));
+		z-index: 99;
+ 	}
+
+ 	.Bar a {
+ 		text-decoration: none;
+ 		color: whitesmoke;
+ 		font-size: 0.9em;
+ 		margin: 0px 30px;
+ 	}
+
+ 	.Bar a:hover {
+   		text-shadow: 2px 2px black; 	
+   	}
+
+ 	.Home {
+ 		height: 100%;
+		min-width:200px;
+		background-image: url(Layer5.jpg);
+		background-position: center ;
+		background-size: cover;
+		background-repeat: no-repeat;
+ 	}
+
+ 	.card-container{ 		
+ 		display: flex;
+   		width: 15%;
+    	height: 15%;
+    	position: absolute;
+    	z-index: 1;
+    	left: 47%;
+    	top: 5%;
+    	filter: drop-shadow(0.35rem 0.35rem 0.4rem rgba(0, 0, 0, 0.3));
+ 	}
+
+
+	.card-container-home {
+	    display: flex;
+	    position: absolute;
+	    z-index: 0;
+	    width: 30%;
+	    height: 60%;
+	    min-width: 200px;
+	    background-image: url('Pexel1.png');
+	    background-size: cover;
+	    background-position: center;
+	    margin: 50px;
+	    top: 10%;
+	    right: 10%;
+	}
+
+	.Media-Sosial a {
+		display: flex;
+		position:absolute;
+		color: whitesmoke;
+		text-decoration: none;
+
+	}
+
+	.facebook {
+		left: 9%;
+		width:10%;
+		height:25%;
+		background-image: url(facebook.png);
+		background-size: contain;
+		background-position: center;
+		background-repeat: no-repeat;
+	    filter: drop-shadow(0.35rem 0.35rem 0.5rem rgba(0, 0, 0, 0.5));
+		transition: 1s;
+	}
+
+	.facebook:hover {
+		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5); 
+	}
+
+	.instragram {
+		left: 25%;
+		width:10%;
+		height:25%;
+		background-image: url(Instragram.png);
+		background-size: contain;
+		background-position: center;
+		background-repeat: no-repeat;
+	    filter: drop-shadow(0.35rem 0.35rem 0.5rem rgba(0, 0, 0, 0.5));
+		transition: 1s
+	}
+
+	.instragram:hover {
+		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5); 
+	}
+ 
+ 	.layer2 {
+ 		width: 100% ;
+		height: 71%;
+		position: absolute;
+		bottom: 0px;
+	    background-image: url('layer2.png');
+	    background-size: cover;
+	    background-position: center;
+	    background-repeat: no-repeat;
+	    filter: drop-shadow(0.35rem 0.35rem 0.4rem rgba(0, 0, 0, 0.3));
+	 }
+
+ 	.layer3 {
+ 		width: 100% ;
+		height: 79%;
+		bottom: 0;
+		position: absolute;
+	    background-image: url('layer5.png');
+	    background-size: cover;
+	    background-position: center;
+	    background-repeat: no-repeat;
+ 	}
+
+ 	.layer4 {
+ 		width: 100% ;
+		height: 87%;
+		bottom: -89px;
+		position: relative;
+	    background-image: url('layer4.png');
+	    background-size: cover;
+	    background-position: center;
+	    background-repeat: no-repeat;
+	    filter: drop-shadow(0.35rem 0.35rem 0.4rem rgba(0, 0, 0, 0.5)); 
+ 	} 	
+
+
+	.container {
+		height: 100%;
+		min-width:200px;
+		background-image: url(Background.jpg);
+		background-position: center ;
+		background-size: cover;
+		background-repeat: no-repeat;
+		overflow: auto;
+		scroll-snap-type: y mandatory;
+		overflow-y: scroll ;
+		scrollbar-width: none;
+		position: relative;
+ 		scroll-behavior: smooth;
+	}
+
+	.layer1 {
+		position: absolute;
+		height: 100%;
+		min-width: 200px;
+/*		z-index: 1;*/
+		top: 0;
+	}
+
+    .layer {
+   		width: 100%;
+    	height: 100%;
+    	position: relative;
+	    filter: drop-shadow(0.35rem 0.35rem 0.4rem rgba(0, 0, 0, 0.3));
+ 	}
+
+ 	.layer .tsuki1 {
+ 		position: absolute;
+ 		bottom:0;
+ 		width: 100vw;
+ 		height: auto;
+ 	}
+
+	.back-video {
+		position: relative;
+		top: 0;
+		left: 0;
+		min-height: 100%;
+		width: 100vw;
+	}
+
+	.back-video video {
+	
+	}
+
+    h1 {
+		font-size: 5vw;
+		color: whitesmoke;
+		font-family:"Times New Roman", Times, serif;
+	}
+
+	h3 {
+		font-size: 2vw;
+		color: whitesmoke;
+	}
+
+	.word {
+		font-size: 9vw;
+		color: blueviolet;
+		font-family:"Times New Roman", Times, serif;
+	}
+
+	.word2 {
+		font-size: 4vw;
+		color: blueviolet ;
+		font-family: "Times New Roman", Times, serif;
+	}
+
+	.study {
+		height: 40%;
+		width: 25%;
+		/*border-style: solid;
+		border-color: whitesmoke;*/
+		position: absolute;
+		left: 73%;
+		top: 25%;
+	}
+
+	.Card {
+		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5); 
+		border-radius: 0 70px 0 0;
+		height: 25vw;
+		max-width: 40vw;
+		overflow: hidden;
+	}
+
+	.Card .images {
+		min-width: 200px;
+		height: 100%;
+	}
+
+	.images .img1 {
+		height: 100%;
+		min-width: 200px;
+		border-radius: 0 70px 0 0;
+	}
+
+	section {
+		height: 100vh;
+		scroll-snap-align: start;
+		display: flex;
+	}
+
+	.three {
+		width: 90%;
+		height: 90%;
+		transform: translate(0,-50px);
+		transition: 1.5s;
+		opacity: 0;
+		position: absolute;
+	}
+
+	.three p {
+		font-size: 1vw;
+		font-family: "Poppins", sans-serif;
+		color: darkblue;
+		text-align: justify;
+	}
+
+	#section-content {
+		justify-content: center;
+		align-items: center;
+	}
+
+	.text {
+		height: 50%;
+		width: 40%;
+		padding: 0 0 0 30px;
+		font-size: 1vw;
+		color: darkblue;
+		text-align: justify;
+	  }
+
+	.text {
+	   font-family: "Poppins", sans-serif;
+
+	}
+
+	.container .two .Card {
+		opacity: 0;
+		transform: translate(-50px, 0);
+    	transition: 2s;
+	}
+
+	.container .two .text {
+		opacity: 0;
+		transform: translate(0, -50px);
+    	transition: 2s;
+	}
+
+	.container .Card.sea,
+	.container .text.sea {
+		 opacity: 1;
+         transform: translate(0,0);
+	}
+
+
+
+	.myImg {
+		display: flex;
+   		width: 15%;
+    	height: 100%;
+    	position: absolute;
+    	left: 33%;
+    	top: 0;
+    	opacity: 0;
+		transform: translate(0,-50px);
+    	transition: 2s;
+	}
+
+	.myImage {
+		display: flex;
+		width: 15%;
+		height: 100%;
+		position: absolute;
+		left: 26%;
+		top: 0;
+		opacity: 0;
+		transform: translate(0,-50px);
+		transition: 2s;		
+	}
+
+	.myImage2 {
+		display: flex;
+		width: 15%;
+		height: 100%;
+		position: absolute;
+		top: 0;
+		left: 43%;
+		opacity: 0;
+		transform: translate(0,-50px);
+		transition: 2s;	
+	}
+
+	#myBut {
+		display: flex;
+		width: 20%;
+		height: 25%;
+     	position: absolute;
+     	left: 0;
+     	background-image: url(UKSW.png);
+     	background-size: cover;
+     	background-position: center;
+     	background-color: transparent;
+     	border-style: none;
+     	top: 10%;
+     	transition: 1s;
+	}
+
+	#myBut:hover {
+	    filter: drop-shadow(0.35rem 0.35rem 0.4rem rgba(0, 0, 0, 0.5)); 
+
+	}
+
+	#myBut2 {
+		display: flex;
+		width: 20%;
+		height: 25%;
+     	position: absolute;
+     	left: 10%;
+     	background-image: url(SMA.png);
+     	background-size: contain;
+     	background-repeat: no-repeat;
+     	background-position: center;
+      	background-color: transparent;
+     	border-style: none;
+     	top: 40%;
+     	transition: 1s;
+	}
+
+		#myBut2:hover {
+	    filter: drop-shadow(0.35rem 0.35rem 0.4rem rgba(0, 0, 0, 0.5)); 
+
+	}
+
+	#myBut3 {
+		display: flex;
+		width: 20%;
+		height: 25%;
+     	position: absolute;
+     	left: 0;
+     	background-image: url(SM.png);
+     	background-size: contain;
+     	background-repeat: no-repeat;
+     	background-position: center;
+     	background-color: transparent;
+     	border-style: none;
+     	top: 70%;
+     	transition: 1s;
+	}
+
+		#myBut3:hover {
+	    filter: drop-shadow(0.35rem 0.35rem 0.4rem rgba(0, 0, 0, 0.5)); 
+
+	}
+
+	.sea1 {
+		opacity: 1;
+		transform: translate(0,0);
+	}
+
+	.Sarjana{
+/*		display: flex;*/
+		position: absolute;
+		opacity: 0;
+		transform: translate(50px, 0);
+		transition: 2s;
+	}
+
+	.sma {
+		position: absolute;
+		opacity: 0;
+		transform: translate(50px, 0);
+		transition: 2s;
+	}
+
+	.smp {
+		position: absolute;
+		opacity: 0;
+		transform: translate(50px, 0);
+		transition: 2s;
+	}
+
+	.sea2 {
+		opacity: 1;
+		transform: translate(0,0);
+	} 
+
+	.sea3 {
+		opacity: 1;
+		transform: translate(0,0);
+	} 
+
+	.Memorry {
+		height: 90%;
+		width: 80%;
+		position: absolute;
+		display: flex;
+	}
+
+	.Memorry .button {
+		text-decoration: none;
+		display: flex;
+		position: relative;
+		border-style: none;
+		color: whitesmoke;
+		background-color: transparent;
+	}
+
+	#Button1 {
+		height: 35%;
+		width: 31%;
+		top: 35%;
+		left: 10%;
+		position: relative;
+		background-image: url('StockCake1.jpg');
+		background-size: cover;
+		background-repeat: no-repeat;
+		border-radius: 20px 70px 20px 20px;	
+	    filter: drop-shadow(0.35rem 0.35rem 0.4rem rgba(0, 0, 0, 0.5)); 
+	}
+
+	#Button1 .word3
+	{
+		width: 100%;
+		padding: 20px 0 0 0;
+		position: relative;
+		text-align: right;
+		font-size: 4vw;
+		text-shadow: 0px 0px 8px black;
+		font-family: "Times New Roman", Times, serif;
+	}
+
+	#Button1 .word3:hover 
+	{
+		transition: left 2s ease-in-out;
+		left: 40px;
+	}
+
+	#Button2 {
+		height: 35%;
+		width: 31%;
+		top: 35%;
+		left: 25%;
+		position: relative;
+		background-image: url('StockCake2.jpg');
+		background-size: cover;
+		background-repeat: no-repeat;
+		border-radius: 20px 70px 20px 20px;	
+	    filter: drop-shadow(0.35rem 0.35rem 0.4rem rgba(0, 0, 0, 0.5)); 
+	}
+
+	#Button2 .word4
+	{
+		width: 100%;
+		padding: 20px 0 0 0;
+		position: relative;
+		text-align: right;
+		font-size: 4vw;
+		text-shadow: 0px 0px 8px black;
+		font-family: "Times New Roman", Times, serif;
+	}
+
+	#Button2 .word4:hover 
+	{
+		transition: left 2s ease-in-out;
+		left: 40px;
+	}
+
+	.Paragraf
+	{
+		position:absolute;
+		left: 5%; 
+		top: 35%;
+		z-index: 0;
+	}
+
+	.Paragraf p {
+	    color: white;
+	    margin: 10px;
+	    margin-left: 10%;
+	    font-family: 'Lato', sans-serif; 
+	    font-size: 1.2vw; 
+	    line-height: 1.6;
+	}
+
+	.Paragraf h1 {
+	    color: white;
+	    font-family: 'Lato', sans-serif;
+	    font-size: 3vw;
+	    margin-top: -10px;
+	    margin-left: 10%;
+	    display: block;
+	}
+
+	.Paragraf .Tooth {
+	    color: blueviolet;
+	    transition: 0.5s;
+	}
+
+	.Paragraf .Tooth:hover {
+	    -webkit-text-stroke: 1px #fff;
+	    color: transparent;
+	}
+
+	@media (max-width: 768px) {
+	    header {
+	        padding: 20px 40px; 
+	        font-size: 3vw;
+	    }
+
+	    .Bar {
+	        display: flex;
+	        flex-direction: 
+	        align-items: 
+	    }
+
+	    .Bar a {
+	        margin: 10px; 
+	    }
+	}
+
+	@media (max-width: 480px) {
+	    header {
+	        padding: 15px 20px; 
+	        font-size: 3vw; 
+	    }
+
+	    .Bar a {
+	    	margin: 10px;
+	        font-size: 0.8em; 
+	    }
+	}
